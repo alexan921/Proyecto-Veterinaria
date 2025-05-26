@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Veterinario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="header-left">
+        <img src="img/logo 1.avif" alt="Huellas">
+        <div class="header-text">
+            <h1>Centro Veterinario</h1>
+            <h2>Caninos y Felinos</h2>
+        </div>
+        <img src="img/logo 2.jpg" alt="Animales" class="logo-right">
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="productos.html">Productos</a>
+    <a href="guarde.html">Guardería</a>
+    <a href="promociones.html">Promociones</a>
+</nav>
+
+<main>
+    <div class="content-sections">
+        <div class="content">
+            <h3>Cuidados y Educación para su Perro</h3>
+            <img src="img/amigable.jpg" alt="Perro educado">
+            <p>
+                Cuidar a un perro implica compromiso y atención. En general, es importante procurar una alimentación saludable para ellos, así como favorecer su actividad física y estimular su socialización. También es fundamental ofrecerle cuidados y revisiones veterinarias para controlar su estado de salud y mejorar su calidad de vida.
+            </p>
+            <a href="https://postgradoveterinaria.com/cuidados-perro-recomendaciones-basicas/" class="read-more">Ver más...</a>
+        </div>
+
+        <div class="content">
+            <h3>Salir de viaje con una mascota</h3>
+            <img src="img/viajero.jpg" alt="Viaje con mascota">
+            <p>
+                Si va a viajar con su mascota, es importante que consulte con su veterinario y prepare con tiempo los documentos, vacunas y el medio de transporte adecuado. Aquí le damos algunos consejos útiles.
+            </p>
+            <a href="#" class="read-more">Ver más...</a>
+        </div>
+    </div>
+
+    <div class="container form-container">
+    <h2>Solicitar Cita Medica</h2>
+    <form action="agregar.php" name="formulario" id="formulario" method="post" enctype="multipart/form-data">
+
+        <div class="form-group-custom">
+            <label for="mascota">Mascota</label>
+            <input type="text" name="mascota" id="mascota" placeholder="Ingrese Nombre" class="form-control" required>
+        </div>
+
+        <div class="form-group-custom">
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" class="form-control" min="0" max="30" required>
+        </div>
+
+        <div class="form-group-custom">
+            <label for="raza">Raza</label>
+            <input type="text" name="raza" id="raza" placeholder="Ingrese Raza" class="form-control" required>
+        </div>
+
+        <div class="form-group-custom">
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha" class="form-control" required>
+        </div>
+
+        <div class="form-group-custom">
+            <label for="time">Hora</label>
+            <input type="time" name="time" id="time" class="form-control" required>
+        </div>
+
+        <div class="form-group-custom">
+            <label for="amo">Amo</label>
+            <input type="text" name="amo" id="amo" placeholder="Ingrese Nombre" class="form-control" required>
+        </div>
+
+        <div>
+            <input type="submit" value="Validar cita" name="enviar" id="enviar" class="btn-custom">
+        </div>
+    </form>
+</div>
+</main>
+<footer>
+    <div class="footer-content">
+        <p class="contact-title">Contáctenos</p>
+        <p class="phone-number">Línea Gratuita 01 8000-00001</p>
+        <p class="email">Correo: preguntas@caninosyfelinos.com</p>
+    </div>
+</footer>
+</body>
+</html>
