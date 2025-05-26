@@ -147,7 +147,6 @@ main {
 .content .read-more:hover {
     text-decoration: underline;
 }
-
 .form-container {
     background-color: #e0e0e0;
     padding: 20px;
@@ -306,4 +305,7 @@ footer {
     .btn-custom {
         width: 80%;
     }
+} 
+ul{
+    list-style-type: none;
 }
